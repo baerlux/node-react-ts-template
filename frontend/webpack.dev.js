@@ -25,6 +25,21 @@ module.exports = {
         type: 'asset/resource',
         exclude: /node_modules/,
       },
+      {
+        test: /\.(html|ico)$/i,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+          },
+        },
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.woff2?$/i,
+        use: 'url-loader',
+        exclude: /node_modules/,
+      },
     ],
   },
   resolve: {
@@ -32,6 +47,6 @@ module.exports = {
   },
   output: {
     filename: 'script.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'public'),
   },
 }

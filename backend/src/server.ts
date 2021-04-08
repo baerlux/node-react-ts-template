@@ -51,6 +51,9 @@ const server = createHttpsServer(options, (req, res) => {
         case '.js':
           contentType = 'application/javascript'
           break
+        case '.woff2':
+          contentType = 'font/woff'
+          break
         case '.json':
           contentType = 'application/json'
           break
@@ -90,7 +93,7 @@ const httpServer =
       })
     : null
 
-const handleExit = (signal) => {
+const handleExit: NodeJS.SignalsListener = (signal) => {
   logInfo(`Received ${signal} -> Server shutting down`)
   httpServer?.close()
   server.close(() => {

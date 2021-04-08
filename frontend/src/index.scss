@@ -1,0 +1,14 @@
+@font-face {
+  src: url('../assets/JetBrainsMono-Regular.woff2') format('woff2');
+  font-family: 'JetBrains Mono';
+  font-display: block;
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'JetBrains Mono';
+  background-color: #10141a;
+  box-sizing: border-box;
+  margin: 0;
+}
