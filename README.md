@@ -8,13 +8,33 @@ And Webpack to wrap it all up
 The build script requires a Linux environment.  
 It watches for changes and automatically rebuilds the server and frontend during development.
 
+**Log-files** for all build processes can be found in the logs folder!
+
+## install dependencies
+
+```shell
+yarn install
+```
+
 ## development build
+
+```shell
+yarn run dev
+```
+
+or
 
 ```shell
 ./scripts/build.sh dev localhost 8080
 ```
 
 ## production build and running server
+
+```shell
+yarn run build
+```
+
+or
 
 ```shell
 ./scripts/build.sh prod

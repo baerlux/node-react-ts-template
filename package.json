@@ -1,0 +1,14 @@
+{
+  "name": "webzapp",
+  "private": true,
+  "scripts": {
+    "dev": "bash scripts/build.sh dev localhost 8080",
+    "build": "bash scripts/build.sh prod",
+    "serve": "bash scripts/serve.sh localhost 8080",
+    "clean": "bash scripts/clean.sh"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
+}
