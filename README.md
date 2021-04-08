@@ -32,6 +32,7 @@ or
 
 ```shell
 yarn run build
+yarn run serve
 ```
 
 or
